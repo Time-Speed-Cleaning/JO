@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME SPEED CLEANING | Luxury Cleaning</title>
+    <meta name="description" content="Professional cleaning company providing villa, office, and home cleaning services with the highest quality standards in Jordan.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <i class="fa-solid fa-gem loader-icon"></i>
+            <h2>TIME SPEED CLEANING</h2>
+            <div class="loading-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/962799607579" target="_blank" class="floating-wa" aria-label="Contact via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-gem"></i> TIME SPEED CLEANING
+        </a>
+        
+        <div class="nav-actions-mobile">
+            <button id="theme-toggle-mobile" class="icon-btn" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+        
+        <div class="nav-links" id="nav-links">
+            <button class="close-menu" id="close-menu" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#process">How It Works</a>
+            <a href="#testimonials">Reviews</a>
+            <button class="nav-book-btn" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">Book Now</button>
+            
+            <div class="mobile-menu-contact">
+                <a href="tel:+962799607579" dir="ltr">+962 799 607 579 <i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:jawadalfaqeh8@gmail.com">jawadalfaqeh8@gmail.com <i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="nav-actions-desktop">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            <a href="index.html" class="lang-btn">AR</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg-anim" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content glass-card" data-aos="fade-up">
+            <div class="badge"><i class="fa-solid fa-medal"></i> Jordan's #1 Cleaning Choice</div>
+            <h1 class="typewriter-text">Redefining the <span>Meaning of Clean</span></h1>
+            <p>A luxury hotel experience in your home or office. We use the latest technologies to ensure a healthy, safe, and sparkling environment in record time.</p>
+            <div class="hero-btns">
+                <button class="btn-glow" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})"><span>Book Your Slot</span> <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="#services" class="btn-outline">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands-section" data-aos="fade-in">
+        <div class="brands-wrapper">
+            <i class="fa-solid fa-hotel" title="Hotels"></i>
+            <i class="fa-regular fa-hospital" title="Hospitals"></i>
+            <i class="fa-solid fa-building" title="Corporations"></i>
+            <i class="fa-solid fa-house-user" title="Residential Complexes"></i>
+            <i class="fa-solid fa-shop" title="Malls"></i>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-section">
+        <div class="stats-container">
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-wrapper"><i class="fa-solid fa-face-smile-beam"></i></div>
+                <h3 class="counter" data-target="2500">0</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-wrapper"><i class="fa-solid fa-building-circle-check"></i></div>
+                <h3 class="counter" data-target="850">0</h3>
+                <p>Projects Done</p>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-wrapper"><i class="fa-solid fa-stopwatch"></i></div>
+                <h3 class="counter" data-target="100">0</h3>
+                <p>% Punctuality</p>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-wrapper"><i class="fa-solid fa-award"></i></div>
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Years of Excellence</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div class="about-images" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80" alt="Indoor Cleaning Team" class="img-1">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Professional Cleaning" class="img-2">
+                <div class="exp-badge">
+                    <span class="num">10+</span>
+                    <span class="text">Years<br>Exp.</span>
+                </div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <span class="subtitle">Why Choose Us?</span>
+                <h2>Professionalism is not just a word, <span>it's our commitment.</span></h2>
+                <p>At TIME SPEED CLEANING, we don't just remove dirt, we create a vibrant environment. Our team of trained experts treats every space like an art piece that needs high care.</p>
+                
+                <ul class="features-list-about">
+                    <li>
+                        <i class="fa-solid fa-leaf"></i>
+                        <div>
+                            <h4>Eco-Friendly Materials</h4>
+                            <p>We use globally approved cleaners that are completely safe for children and pets.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>Reliability & Safety</h4>
+                            <p>All our crew members have undergone security checks and intensive training for your peace of mind.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <h4>Speed & Accuracy</h4>
+                            <p>We get the job done on time without ever compromising on the quality of small details.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">Comprehensive Services</span>
+            <h2>Cleaning Solutions <span>Designed for You</span></h2>
+            <p class="title-desc">We offer a complete range of cleaning services that cover all your residential and commercial needs with the highest standards.</p>
+        </div>
+        <div class="cards-container">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Villa Cleaning">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-house-chimney icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Villa & Home Cleaning</h3>
+                    <p>Royal care for the finest details of furniture and floors, making your home bright as day one.</p>
+                    <button class="read-more" onclick="selectService('Villa & Home Cleaning')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Office Cleaning">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-briefcase icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Commercial & Office</h3>
+                    <p>A clean environment that boosts employee productivity and reflects a professional image.</p>
+                    <button class="read-more" onclick="selectService('Office & Corporate Cleaning')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80" alt="Post-Construction">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-paint-roller icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Post-Construction</h3>
+                    <p>Complete removal of construction waste, paints, and cement with modern specialized devices.</p>
+                    <button class="read-more" onclick="selectService('Post-Construction Cleaning')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80" alt="Carpet Cleaning">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-couch icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Carpet & Upholstery</h3>
+                    <p>Deep cleaning and removal of tough stains and odors using dry steam technology.</p>
+                    <button class="read-more" onclick="selectService('Carpet & Upholstery')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Facade Cleaning">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-building icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Facade Cleaning</h3>
+                    <p>Polishing glass and stone facades for companies and buildings to restore their shine.</p>
+                    <button class="read-more" onclick="selectService('Facade Cleaning')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80" alt="Sanitization">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-spray-can-sparkles icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Deep Sanitization</h3>
+                    <p>Eliminating viruses and bacteria with approved medical materials for maximum protection.</p>
+                    <button class="read-more" onclick="selectService('Deep Sanitization')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">Simple Steps</span>
+            <h2>How It <span>Works?</span></h2>
+        </div>
+        <div class="process-container">
+            <div class="process-step" data-aos="zoom-in" data-aos-delay="100">
+                <div class="step-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                <h3>1. Book Appointment</h3>
+                <p>In one step via our website or WhatsApp, select the service and time that suits you.</p>
+            </div>
+            <div class="process-line"></div>
+            <div class="process-step" data-aos="zoom-in" data-aos-delay="200">
+                <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>2. Team Arrival</h3>
+                <p>Our fully equipped team arrives on time to professionally begin the cleaning process.</p>
+            </div>
+            <div class="process-line"></div>
+            <div class="process-step" data-aos="zoom-in" data-aos-delay="300">
+                <div class="step-icon"><i class="fa-solid fa-star"></i></div>
+                <h3>3. Enjoy Cleanliness</h3>
+                <p>Receive your place sparkling clean and enjoy a healthy environment and peace of mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">Success Stories</span>
+            <h2>What Our <span>Clients Say</span></h2>
+        </div>
+        <div class="swiper mySwiper" data-aos="zoom-in">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testi-card">
+                        <div class="client-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>"A service beyond imagination! Punctuality and attention to small details made my home look completely new."</p>
+                        <h4>Eng. Ahmad Khalil</h4>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testi-card">
+                        <div class="client-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>"We hired them to clean the new company headquarters after finishing, the result was impressive."</p>
+                        <h4>Sara Al-Otaibi</h4>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testi-card">
+                        <div class="client-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>"The best cleaning company I dealt with in Jordan. Fast response and highly professional staff."</p>
+                        <h4>Dr. Rami Abdullah</h4>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testi-card">
+                        <div class="client-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>"Very elegant dealing and impressive results. The team was punctual and used great smelling, non-allergenic cleaning products."</p>
+                        <h4>Dr. Noor Issa</h4>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">Common Inquiries</span>
+            <h2>Frequently Asked <span>Questions</span></h2>
+        </div>
+        <div class="faq-container" data-aos="fade-up">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you bring your own cleaning supplies and equipment?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Yes, our team arrives fully equipped with the latest tools and safe, effective cleaning materials to ensure the highest quality without extra burden on you.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are the cleaning products safe for children and pets?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Absolutely, we make sure to use eco-friendly and medically licensed products to ensure the safety of your entire family and pets while maintaining cleaning effectiveness.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Is there a guarantee on the work quality?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Customer satisfaction is our first priority. If you are not satisfied with any part of the service, please let us know immediately and the team will address it right away until you are completely satisfied.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How can I reschedule or cancel my booking?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    You can contact us directly via WhatsApp or phone at least 24 hours before your appointment, and we will be happy to assist you in rescheduling or canceling it easily.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="booking-container" data-aos="fade-up">
+            <div class="booking-grid">
+                <div class="booking-info glass-card-dark" style="background-image: linear-gradient(135deg, rgba(7,14,26,0.95), rgba(21,32,51,0.9)), url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80');">
+                    <h2>Your Path to Clean Starts Here</h2>
+                    <p>Fill out this simplified form and our specialized team will contact you within minutes to confirm via WhatsApp.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:jawadalfaqeh8@gmail.com" class="method">
+                            <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="method-text">
+                                <span>Email Us</span>
+                                <strong>jawadalfaqeh8@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="tel:+962799607579" class="method" dir="ltr">
+                            <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="method-text">
+                                <span>Call Us Directly</span>
+                                <strong>+962 799 607 579</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <form id="bookingForm" class="booking-form premium-form" data-lang="en">
+                    <h3 class="form-title">Quick Booking</h3>
+                    
+                    <div class="input-grid">
+                        <div class="input-field">
+                            <label for="name_en">Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-user form-icon"></i>
+                                <input type="text" id="name" required placeholder="Enter your full name">
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="phone_en">Phone Number</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-phone form-icon"></i>
+                                <input type="tel" id="phone" required placeholder="079XXXXXXX">
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="city_en">City / Region</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-location-dot form-icon"></i>
+                                <input type="text" id="city" required placeholder="E.g. Amman - Jubeiha">
+                            </div>
+                        </div>
+                        <div class="input-field select-field">
+                            <label for="service_en">Required Service</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-broom form-icon"></i>
+                                <select id="service" required>
+                                    <option value="" disabled selected hidden>Select Service...</option>
+                                    <option value="Villa & Home Cleaning">Villa & Home Cleaning</option>
+                                    <option value="Office & Corporate Cleaning">Office & Corporate Cleaning</option>
+                                    <option value="Post-Construction Cleaning">Post-Construction Cleaning</option>
+                                    <option value="Carpet & Upholstery">Carpet & Upholstery</option>
+                                    <option value="Facade Cleaning">Facade Cleaning</option>
+                                    <option value="Deep Sanitization">Deep Sanitization</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="date_en">Date</label>
+                            <div class="input-wrapper">
+                                <input type="date" id="date" required>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="time_en">Time</label>
+                            <div class="input-wrapper">
+                                <input type="time" id="time" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-field w-100 mt-3">
+                        <label for="notes_en">Additional Notes (Optional)</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-comment-dots form-icon textarea-icon"></i>
+                            <textarea id="notes" placeholder="Any extra details about the space or service needed..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-glow w-100">
+                        <i class="fa-brands fa-whatsapp"></i> Send & Confirm
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-gem"></i> TIME SPEED CLEANING
+                </div>
+                <p>We provide luxury hotel-level cleaning services. We rely on trained staff and the latest technologies to ensure a healthy environment worthy of our clients.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a>
+                    <a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a>
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a>
+                    <a href="#testimonials"><i class="fa-solid fa-chevron-right"></i> Reviews</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <div class="footer-links">
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Villa Cleaning</a>
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Office Cleaning</a>
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Post-Construction</a>
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Deep Sanitization</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="footer-contact">
+                    <a href="mailto:jawadalfaqeh8@gmail.com"><i class="fa-solid fa-envelope"></i> jawadalfaqeh8@gmail.com</a>
+                    <a href="tel:+962799607579" dir="ltr" class="align-left"><i class="fa-solid fa-phone"></i> +962 799 607 579</a>
+                </div>
+                <div class="working-hours">
+                    <strong>Working Hours:</strong>
+                    <p>Available to serve you 24/7 all week long.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Eng.Jawad Alfaqeh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
