@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME SPEED CLEANING | Professional Standards</title>
+    <meta name="description" content="Professional cleaning company providing integrated corporate and residential cleaning services with the highest quality standards.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <i class="fa-solid fa-shield-halved loader-icon"></i>
+            <h2>TIME SPEED CLEANING</h2>
+            <div class="loading-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/962799607579" target="_blank" class="floating-wa" aria-label="Contact Support">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-shield-halved"></i> TIME SPEED CLEANING
+        </a>
+        
+        <div class="nav-actions-mobile">
+            <button id="theme-toggle-mobile" class="icon-btn" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+        
+        <div class="nav-links" id="nav-links">
+            <button class="close-menu" id="close-menu" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#process">Protocol</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#careers">Careers</a>
+            <button class="nav-book-btn" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">Book Service</button>
+            
+            <div class="mobile-menu-contact">
+                <a href="tel:+962799607579" dir="ltr">+962 799 607 579 <i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:mrwm42737@gmail.com">mrwm42737@gmail.com <i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="nav-actions-desktop">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            <a href="index.html" class="lang-btn">AR</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-anim" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content glass-card" data-aos="fade-up">
+            <div class="badge"><i class="fa-solid fa-medal"></i> Excellence in Facility Management</div>
+            <h1 class="typewriter-text">Redefining <span>Cleaning Standards</span></h1>
+            <p>Integrated corporate and residential services. We rely on qualified staff and modern technologies to ensure a healthy and professional environment.</p>
+            <div class="hero-btns">
+                <button class="btn-glow" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})"><span>Schedule Request</span> <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="#services" class="btn-outline">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="brands-section" data-aos="fade-in">
+        <div class="brands-wrapper">
+            <i class="fa-solid fa-hotel" title="Hotels"></i>
+            <i class="fa-regular fa-hospital" title="Medical"></i>
+            <i class="fa-solid fa-building" title="Corporations"></i>
+            <i class="fa-solid fa-house-user" title="Residential"></i>
+            <i class="fa-solid fa-shop" title="Commercial"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="stats-container">
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-wrapper"><i class="fa-solid fa-handshake"></i></div>
+                <h3 class="counter" data-target="2500">0</h3>
+                <p>Official Clients</p>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-wrapper"><i class="fa-solid fa-building-circle-check"></i></div>
+                <h3 class="counter" data-target="850">0</h3>
+                <p>Facilities Completed</p>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-wrapper"><i class="fa-solid fa-stopwatch"></i></div>
+                <h3 class="counter" data-target="100">0</h3>
+                <p>% Punctuality</p>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-wrapper"><i class="fa-solid fa-award"></i></div>
+                <h3 class="counter" data-target="10">0</h3>
+                <p>Years in Service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div class="about-images" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80" alt="Corporate Cleaning" class="img-1">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Professional Standards" class="img-2">
+                <div class="exp-badge">
+                    <span class="num">10+</span>
+                    <span class="text">Years<br>Exp.</span>
+                </div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <span class="subtitle">Corporate Profile</span>
+                <h2>Commitment and Quality are <span>Our Core Foundations.</span></h2>
+                <p>TIME SPEED CLEANING is dedicated to providing formal and highly professional services. We offer strategic facility management plans to ensure environments free of pollutants.</p>
+                
+                <ul class="features-list-about">
+                    <li>
+                        <i class="fa-solid fa-leaf"></i>
+                        <div>
+                            <h4>Strict Environmental Standards</h4>
+                            <p>We utilize safe materials approved by competent authorities.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>Reliable Personnel</h4>
+                            <p>Security-cleared staff undergoing continuous and rigorous training.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <h4>Efficiency & Accuracy</h4>
+                            <p>Applying the latest protocols to ensure tasks are completed in record time.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">Certified Services</span>
+            <h2>Integrated Solutions for <span>Facilities</span></h2>
+            <p class="title-desc">A wide range of services precisely designed to meet the demands of various sectors with utmost professionalism.</p>
+        </div>
+        <div class="cards-container">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1612965607446-25e1332775ae?auto=format&fit=crop&w=800&q=80" alt="Corporate Contracts">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-people-group icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Corporate Teams & Contracts</h3>
+                    <p>Providing and dispatching fully equipped teams to manage and organize facilities periodically.</p>
+                    <button class="read-more" onclick="selectService('Corporate Teams & Contracts')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Office Cleaning">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-briefcase icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Commercial & Office</h3>
+                    <p>Managing the cleanliness of workspaces to boost productivity and reflect a prestigious image.</p>
+                    <button class="read-more" onclick="selectService('Commercial & Office Cleaning')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80" alt="Post-Construction">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-paint-roller icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Post-Project Cleaning</h3>
+                    <p>Complete removal of construction debris and industrial materials using heavy equipment.</p>
+                    <button class="read-more" onclick="selectService('Post-Project Cleaning')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Villa Care">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-house-chimney icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Villa & Estate Care</h3>
+                    <p>Specialized cleaning protocols for large residential areas to ensure delicate care.</p>
+                    <button class="read-more" onclick="selectService('Villa & Estate Care')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Facade Cleaning">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-building icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Glass Facade Cleaning</h3>
+                    <p>Polishing the exterior facades of towers and corporate buildings to restore their aesthetic appeal.</p>
+                    <button class="read-more" onclick="selectService('Glass Facade Cleaning')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1584467735815-f778f274e296?auto=format&fit=crop&w=800&q=80" alt="Medical Sanitization">
+                    <div class="img-overlay"></div>
+                    <i class="fa-solid fa-spray-can-sparkles icon-floating"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Medical Sanitization</h3>
+                    <p>Applying standard sterilization procedures to eliminate pathogens with medically approved materials.</p>
+                    <button class="read-more" onclick="selectService('Medical Sanitization')">Request Service <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">Operational Protocol</span>
+            <h2>How It <span>Works?</span></h2>
+        </div>
+        <div class="process-container">
+            <div class="process-step" data-aos="zoom-in" data-aos-delay="100">
+                <div class="step-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                <h3>1. Scheduling</h3>
+                <p>Determining the scope of work and appropriate time in a formal and coordinated manner.</p>
+            </div>
+            <div class="process-line"></div>
+            <div class="process-step" data-aos="zoom-in" data-aos-delay="200">
+                <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>2. Deployment</h3>
+                <p>Dispatching specialized teams with necessary equipment precisely on schedule.</p>
+            </div>
+            <div class="process-line"></div>
+            <div class="process-step" data-aos="zoom-in" data-aos-delay="300">
+                <div class="step-icon"><i class="fa-solid fa-star"></i></div>
+                <h3>3. Assessment</h3>
+                <p>Site handover confirming quality standards and ensuring absolute satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers-section">
+        <div class="careers-container" data-aos="fade-up">
+            <div class="careers-content">
+                <h2>Join Our <span>Corporate Team</span></h2>
+                <p>We are constantly seeking professional and reliable talents to join our crew. If you possess experience and professional commitment, we welcome your application.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6sWSk1OdtpwYrU6UFFCq4URNeD7EPeWBoMJjj3FY3IimdPA/viewform?usp=header" target="_blank" class="btn-glow" rel="noopener noreferrer">
+                    Submit Application <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">Track Record</span>
+            <h2>Client <span>Evaluations</span></h2>
+        </div>
+        <div class="swiper mySwiper" data-aos="zoom-in">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testi-card">
+                        <div class="client-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>High professional standard in operations. Strict adherence to time and execution precision reflected excellently on our firm.</p>
+                        <h4>Al-Afaq Corporate Management</h4>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testi-card">
+                        <div class="client-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>The post-construction project was handed over on time. The team demonstrated high efficiency and reliability.</p>
+                        <h4>Eng. Khalid Alyaseen</h4>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testi-card">
+                        <div class="client-avatar"><i class="fa-solid fa-circle-user"></i></div>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>The periodic maintenance contracts significantly enhanced our daily operational environment.</p>
+                        <h4>CEO - Commerce Sector</h4>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="section-title" data-aos="fade-up">
+            <span class="subtitle">General Inquiries</span>
+            <h2>Frequently Asked <span>Questions</span></h2>
+        </div>
+        <div class="faq-container" data-aos="fade-up">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are materials and equipment provided by your company?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Yes, our crews are fully equipped with advanced materials and machinery to guarantee operations meet approved standards.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you provide periodic corporate contracts?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Absolutely, we offer structured operational contracts (daily, weekly, monthly) strictly based on the facility's demands.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is the modification or cancellation policy?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Scheduled appointments can be modified by notifying us a minimum of 24 hours in advance through official communication channels.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="booking">
+        <div class="booking-container" data-aos="fade-up">
+            <div class="booking-grid">
+                <div class="booking-info glass-card-dark" style="background-image: linear-gradient(135deg, rgba(30,58,138,0.95), rgba(37,99,235,0.9)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80');">
+                    <h2>Reservation Management</h2>
+                    <p>Please fill out the form below to coordinate the required service. Our relevant department will reply to confirm details.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:mrwm42737@gmail.com" class="method">
+                            <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="method-text">
+                                <span>Official Email</span>
+                                <strong>mrwm42737@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="tel:+962799607579" class="method" dir="ltr">
+                            <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="method-text">
+                                <span>Direct Contact</span>
+                                <strong>+962 799 607 579</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <form id="bookingForm" class="booking-form premium-form" data-lang="en">
+                    <h3 class="form-title">Service Request Form</h3>
+                    
+                    <div class="input-grid">
+                        <div class="input-field">
+                            <label for="name_en">Name / Organization</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-building-user form-icon"></i>
+                                <input type="text" id="name" required placeholder="Enter name or company">
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="phone_en">Phone Number</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-phone form-icon"></i>
+                                <input type="tel" id="phone" required placeholder="Official contact number">
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="city_en">Detailed Address</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-location-dot form-icon"></i>
+                                <input type="text" id="city" required placeholder="City - Location">
+                            </div>
+                        </div>
+                        <div class="input-field select-field">
+                            <label for="service_en">Service Type</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-clipboard-list form-icon"></i>
+                                <select id="service" required>
+                                    <option value="" disabled selected hidden>Please specify service...</option>
+                                    <option value="Corporate Teams & Contracts">Corporate Teams & Contracts</option>
+                                    <option value="Commercial & Office Cleaning">Commercial & Office Cleaning</option>
+                                    <option value="Villa & Estate Care">Villa & Estate Care</option>
+                                    <option value="Post-Project Cleaning">Post-Project Cleaning</option>
+                                    <option value="Glass Facade Cleaning">Glass Facade Cleaning</option>
+                                    <option value="Medical Sanitization">Medical Sanitization</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="date_en">Proposed Date</label>
+                            <div class="input-wrapper">
+                                <input type="date" id="date" required>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <label for="time_en">Proposed Time</label>
+                            <div class="input-wrapper">
+                                <input type="time" id="time" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-field w-100 mt-3">
+                        <label for="notes_en">Additional Details (Optional)</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-align-left form-icon textarea-icon"></i>
+                            <textarea id="notes" placeholder="Approximate area or other specifications..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-glow w-100">
+                        Confirm & Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-gem"></i> TIME SPEED CLEANING
+                </div>
+                <p>A certified establishment providing facility management and cleaning services with paramount quality and professional commitment.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Navigation</h4>
+                <div class="footer-links">
+                    <a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a>
+                    <a href="#about"><i class="fa-solid fa-chevron-right"></i> Corporate Profile</a>
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Scope of Work</a>
+                    <a href="#careers"><i class="fa-solid fa-chevron-right"></i> Careers</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Key Sectors</h4>
+                <div class="footer-links">
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Corporate Contracts</a>
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Residential Estates</a>
+                    <a href="#services"><i class="fa-solid fa-chevron-right"></i> Medical Facilities</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Data</h4>
+                <div class="footer-contact">
+                    <a href="mailto:mrwm42737@gmail.com"><i class="fa-solid fa-envelope"></i> mrwm42737@gmail.com</a>
+                    <a href="tel:+962799607579" dir="ltr" class="align-left"><i class="fa-solid fa-phone"></i> +962 799 607 579</a>
+                </div>
+                <div class="working-hours">
+                    <strong>Central Operations:</strong>
+                    <p>Support is available around the clock to meet your demands.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Eng. Jawad Alfaqeh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
