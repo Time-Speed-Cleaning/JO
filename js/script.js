@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
         preloader.style.opacity = '0';
         preloader.style.visibility = 'hidden';
         AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
-    }, 800);
+    }, 600);
 });
 
 // Navbar Scroll
@@ -58,27 +58,29 @@ faqItems.forEach(item => {
     });
 });
 
-// Animated Counters
+// Animated Counters (Fixing the requestAnimationFrame for GitHub Pages issue)
 const counters = document.querySelectorAll('.counter');
 let hasAnimated = false;
 const animateCounters = () => {
     counters.forEach(counter => {
         const target = +counter.getAttribute('data-target');
         const duration = 2000;
-        const increment = target / (duration / 16);
-        let current = 0;
-        const updateCounter = () => {
-            current += increment;
-            if (current < target) {
-                counter.innerText = Math.ceil(current) + (target === 100 ? '%' : '+');
-                requestAnimationFrame(updateCounter);
+        let start = null;
+        
+        const step = (timestamp) => {
+            if (!start) start = timestamp;
+            const progress = Math.min((timestamp - start) / duration, 1);
+            counter.innerText = Math.floor(progress * target) + (target === 100 ? '%' : '+');
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
             } else {
                 counter.innerText = target + (target === 100 ? '%' : '+');
             }
         };
-        updateCounter();
+        window.requestAnimationFrame(step);
     });
 };
+
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !hasAnimated) {
@@ -86,7 +88,8 @@ const statsObserver = new IntersectionObserver((entries) => {
             hasAnimated = true;
         }
     });
-}, { threshold: 0.5 });
+}, { threshold: 0.1 }); // Reduced threshold to trigger reliably on mobile
+
 const statsSection = document.getElementById('stats');
 if(statsSection) statsObserver.observe(statsSection);
 
@@ -129,7 +132,7 @@ window.selectService = function(serviceVal) {
     }
 }
 
-// Booking Form Logic
+// Booking Form Logic (Strictly Formal)
 const bookingForm = document.getElementById('bookingForm');
 if (bookingForm) {
     bookingForm.addEventListener('submit', function(e) {
@@ -145,9 +148,9 @@ if (bookingForm) {
         
         let message = '';
         if (lang === 'ar') {
-            message = `مرحباً فريق TIME SPEED CLEANING، 🌟\nأرغب في حجز خدمة تنظيف بناءً على التفاصيل التالية:\n\n👤 الاسم: ${name}\n📞 الهاتف: ${phone}\n📍 العنوان: ${city}\n🧹 الخدمة: ${service}\n📅 التاريخ: ${date}\n⏰ الوقت: ${time}\n📝 ملاحظات: ${notes ? notes : 'لا يوجد'}\n\nأرجو تأكيد الحجز، شكراً لكم! ✨`;
+            message = `السادة فريق TIME SPEED CLEANING المحترمين،\nأود طلب حجز خدمة تنظيف بناءً على التفاصيل الآتية:\n\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالعنوان: ${city}\nالخدمة المطلوبة: ${service}\nالتاريخ: ${date}\nالوقت: ${time}\nملاحظات: ${notes ? notes : 'لا يوجد'}\n\nيرجى تأكيد الحجز، مع خالص التحية.`;
         } else {
-            message = `Hello TIME SPEED CLEANING Team, 🌟\nI want to book a cleaning service with the following details:\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n📍 Address: ${city}\n🧹 Service: ${service}\n📅 Date: ${date}\n⏰ Time: ${time}\n📝 Notes: ${notes ? notes : 'None'}\n\nPlease confirm, thank you! ✨`;
+            message = `Dear TIME SPEED CLEANING Team,\nI would like to request a cleaning service booking with the following details:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${city}\nService: ${service}\nDate: ${date}\nTime: ${time}\nNotes: ${notes ? notes : 'None'}\n\nKindly confirm the booking. Best regards.`;
         }
         
         const whatsappNumber = "962799607579";
